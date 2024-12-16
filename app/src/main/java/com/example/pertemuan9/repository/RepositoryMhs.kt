@@ -11,7 +11,8 @@ interface RepositoryMhs {
 
     fun getMhs(nim: String): Flow<Mahasiswa>
     //memanggil fungsi untuk memanggil data sesuai NIM
-    
+
     suspend fun deleteMhs(mahasiswa: Mahasiswa)
 
+    suspend fun updateMhs(mahasiswa: Mahasiswa)
 }
