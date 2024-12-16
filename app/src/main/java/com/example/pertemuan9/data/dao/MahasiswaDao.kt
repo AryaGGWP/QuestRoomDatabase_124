@@ -1,6 +1,7 @@
 package com.example.pertemuan9.data.dao
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.example.pertemuan9.data.entity.Mahasiswa
@@ -19,6 +20,9 @@ interface MahasiswaDao {
     fun getMahasiswa(nim: String): Flow<Mahasiswa>
     //mengambil data mahasiswa berdasarkan NIM
 
+    @Delete
+    suspend fun deleteMahasiswa(mahasiswa: Mahasiswa)
+    //menghapus data mahasiswa tertentu
 
 }
 
