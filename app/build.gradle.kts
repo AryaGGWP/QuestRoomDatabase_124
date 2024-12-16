@@ -66,6 +66,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
     implementation("androidx.navigation:navigation-compose:2.8.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
 
     implementation("androidx.room:room-runtime:2.6.0")
     ksp("androidx.room:room-compiler:2.5.2")
